@@ -31,7 +31,7 @@ class Service {
         .find(query)
         .skip(skip)
         .limit(limit);
-      let total = await this.model.count();
+      let total = await this.model.countDocuments();
 
       return {
         error: false,
